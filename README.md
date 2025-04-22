@@ -1,3 +1,12 @@
+Hola, espero estes bien.
+utilizare este repositorio para subir mis proyectos ya hehcos con react y medida que trabaje en nuevos cambios los reflejare en este repositorio, espero te guste un abrazo.
+
+
+Hosting Ver https://portafolio-delta-coral.vercel.app/inicio
+
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
