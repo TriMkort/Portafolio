@@ -2,7 +2,7 @@ export const trabajos = [
     {
     'id': 'MaikolWeb',
     'nombre': 'Pagina de peliculas',
-    'url': 'github.com/TriMkort/REACT/tree/develop/react/06-proyecto1',
+    'url': 'peliculas-web-rose.vercel.app/',
     'tecnologias': ['React', 'JavaScript', 'CSS'],
     'categoria' : 'Desarrollo web',
     'descripcion' : 'Portafolio personal de Maikol Sabogal, un desarrollador web full stack.',
