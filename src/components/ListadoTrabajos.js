@@ -10,7 +10,7 @@ const ListadoTrabajos = ({limite = 10}) => {
                 return(
                 <article key={trabajo.id} className='work-item'>
                     <div className='mask'>
-                    <a href={"/proyecto" + trabajo.id}>
+                    <a href={"https://" + trabajo.url}>
                         <img src={"/images/" + trabajo.id + ".png"} alt={trabajo.id}/>
                     </a>
                     </div>  
