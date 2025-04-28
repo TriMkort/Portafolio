@@ -100,7 +100,7 @@ code {
 }
 
 .home .title a{
-  padding: 7px;
+  padding: 1px;
   margin-left: 7px;
   border-radius: 5px;
   color:white;
@@ -140,7 +140,7 @@ textarea{
 input[type="submit"],
 button{
   font-size:15px;
-  padding: 15px;
+  padding: 10px;
   margin-top: 15px;
   border:0px;
   border-radius: 5px;
@@ -161,6 +161,7 @@ button:hover{
     min-height: 40px;
     line-height: 2px;
     text-align: center;
+    width: 100%;
     font-size: 14px;
     margin-top: 80px;
     padding-top: 45px;
