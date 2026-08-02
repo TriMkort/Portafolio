@@ -11,19 +11,19 @@ const HeaderNav = () => {
         <nav>
             <ul>
                 <li>
-                    <GlowButton to="/inicio">Inicio</GlowButton>
+                    <GlowButton to="/inicio" className="glow-inicio">Inicio</GlowButton>
                 </li>
                 <li>
-                    <NeonButton to="/servicios">Servicios</NeonButton>
+                    <NeonButton to="/servicios" className="neon-servicios">Servicios</NeonButton>
                 </li>
                 <li>
-                    <NeonButton to="/portafolio">Portafolio</NeonButton>
+                    <NeonButton to="/portafolio" className="neon-portafolio">Portafolio</NeonButton>
                 </li>
                 <li>
-                    <NeonButton to="/curriculum">Curriculum</NeonButton>
+                    <NeonButton to="/curriculum" className="neon-curriculum">Curriculum</NeonButton>
                 </li>
                 <li>
-                    <GlowButton to="/contacto">Contacto</GlowButton>
+                    <GlowButton to="/contacto" className="glow-contacto">Contacto</GlowButton>
                 </li>
             </ul>
             </nav>
