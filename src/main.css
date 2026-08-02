@@ -128,6 +128,87 @@ code {
 @keyframes neon-horizontal-reverse { to { right: 100%; } }
 @keyframes neon-vertical-reverse { to { bottom: 100%; } }
 
+.header .glow-button{
+  position: relative;
+  display: inline-block;
+  width: 125px;
+  height: 44px;
+}
+
+.header .glow-button__link{
+  position: absolute;
+  inset: 0;
+  z-index: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+  border-top: 1px solid rgba(255, 255, 255, .25);
+  border-bottom: 1px solid rgba(255, 255, 255, .25);
+  border-radius: 30px;
+  color: #fff;
+  background: rgba(15, 30, 31, .86);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, .2);
+  font-weight: 400;
+  letter-spacing: 1px;
+  text-decoration: none;
+  backdrop-filter: blur(15px);
+  transition: letter-spacing .5s ease;
+}
+
+.header .glow-button__link::before{
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 50%;
+  height: 100%;
+  content: '';
+  background: linear-gradient(to left, rgba(255, 255, 255, .15), transparent);
+  transform: skew(45deg) translateX(0);
+  transition: transform .5s ease;
+}
+
+.header .glow-button:hover .glow-button__link,
+.header .glow-button__link.active{
+  color: #fff;
+  letter-spacing: 3px;
+}
+
+.header .glow-button:hover .glow-button__link::before{
+  transform: skew(45deg) translateX(200%);
+}
+
+.header .glow-button::before,
+.header .glow-button::after{
+  position: absolute;
+  left: 50%;
+  width: 30px;
+  height: 10px;
+  content: '';
+  background: #1edd45;
+  border-radius: 10px;
+  box-shadow: 0 0 5px #1edd45, 0 0 15px #1edd45, 0 0 30px #1edd45, 0 0 60px #1edd45;
+  transform: translateX(-50%);
+  transition: .5s ease;
+}
+
+.header .glow-button::before{ bottom: -5px; }
+.header .glow-button::after{ top: -5px; }
+
+.header .glow-button:hover::before,
+.header .glow-button:hover::after,
+.header .glow-button:focus-within::before,
+.header .glow-button:focus-within::after{
+  width: 80%;
+  height: 50%;
+  border-radius: 30px;
+}
+
+.header .glow-button:hover::before,
+.header .glow-button:focus-within::before{ bottom: 0; }
+.header .glow-button:hover::after,
+.header .glow-button:focus-within::after{ top: 0; }
+
 .content{
   min-height: 500px;
 }
@@ -211,8 +292,12 @@ button:hover{
 
 .home .title .glow-button{
   display: inline-block;
-  padding: 10px 16px;
   margin-left: 7px;
+}
+
+.home .title .glow-button__link{
+  display: inline-block;
+  padding: 10px 16px;
   border: 1px solid #ff876f;
   border-radius: 8px;
   color: #fff;
@@ -223,8 +308,8 @@ button:hover{
   animation: glow-pulse 2s ease-in-out infinite alternate;
 }
 
-.home .title .glow-button:hover,
-.home .title .glow-button:focus-visible{
+.home .title .glow-button__link:hover,
+.home .title .glow-button__link:focus-visible{
   color: #fff;
   background-color: #e9361b;
   box-shadow: 0 0 12px rgba(250, 69, 41, .95), 0 0 30px rgba(250, 69, 41, .7);
@@ -232,7 +317,7 @@ button:hover{
   outline: none;
 }
 
-.home .title .glow-button:focus-visible{
+.home .title .glow-button__link:focus-visible{
   outline: 3px solid rgba(250, 69, 41, .35);
   outline-offset: 3px;
 }

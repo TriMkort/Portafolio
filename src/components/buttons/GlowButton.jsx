@@ -1,4 +1,4 @@
-import { Link } from 'react-router-dom';
+import { NavLink } from 'react-router-dom';
 
 export function GlowButton({
   to,
@@ -8,12 +8,23 @@ export function GlowButton({
   ...props
 }) {
   const buttonClassName = `glow-button ${className}`.trim();
+  let link;
 
   if (to) {
-    return <Link to={to} className={buttonClassName} {...props}>{children}</Link>;
+    link = (
+      <NavLink
+        to={to}
+        className={({ isActive }) => `glow-button__link${isActive ? ' active' : ''}`}
+        {...props}
+      >
+        {children}
+      </NavLink>
+    );
+  } else {
+    link = <a href={href} className="glow-button__link" {...props}>{children}</a>;
   }
 
-  return <a href={href} className={buttonClassName} {...props}>{children}</a>;
+  return <span className={buttonClassName}>{link}</span>;
 }
 
 export default GlowButton;

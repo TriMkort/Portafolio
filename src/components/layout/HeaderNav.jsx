@@ -1,4 +1,5 @@
 import NeonButton from '../buttons/NeonButton'
+import GlowButton from '../buttons/GlowButton'
 
 const HeaderNav = () => {
     return (
@@ -10,7 +11,7 @@ const HeaderNav = () => {
         <nav>
             <ul>
                 <li>
-                    <NeonButton to="/inicio">Inicio</NeonButton>
+                    <GlowButton to="/inicio">Inicio</GlowButton>
                 </li>
                 <li>
                     <NeonButton to="/servicios">Servicios</NeonButton>
@@ -22,7 +23,7 @@ const HeaderNav = () => {
                     <NeonButton to="/curriculum">Curriculum</NeonButton>
                 </li>
                 <li>
-                    <NeonButton to="/contacto">Contacto</NeonButton>
+                    <GlowButton to="/contacto">Contacto</GlowButton>
                 </li>
             </ul>
             </nav>
