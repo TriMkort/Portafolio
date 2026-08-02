@@ -1,3 +1,13 @@
+:root {
+  --button-inicio: #1edd45;
+  --button-servicios: #fa4529;
+  --button-portafolio: #217aff;
+  --button-curriculum: #a855f7;
+  --button-contacto: #1edd45;
+  --button-cta: #fa4529;
+  --button-cta-hover: #e9361b;
+}
+
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
@@ -82,9 +92,9 @@ code {
   display: inline-block;
   overflow: hidden;
   padding: 9px 12px;
-  border: 1px solid #fa4529;
+  border: 1px solid var(--neon-color);
   border-radius: 4px;
-  color: #fa4529;
+  color: var(--neon-color);
   background: transparent;
   letter-spacing: 1px;
   text-decoration: none;
@@ -95,15 +105,15 @@ code {
 .header .btn-neon.active,
 .header .btn-neon:focus-visible{
   color: #fff;
-  background-color: #fa4529;
-  box-shadow: 0 0 8px #fa4529, 0 0 20px rgba(250, 69, 41, .7);
+  background-color: var(--neon-color);
+  box-shadow: 0 0 8px var(--neon-color), 0 0 20px var(--neon-color);
   outline: none;
 }
 
 .header .btn-neon span{
   position: absolute;
   display: block;
-  background: #fa4529;
+  background: var(--neon-color);
 }
 
 .header .btn-neon .span1,
@@ -127,6 +137,12 @@ code {
 @keyframes neon-vertical { to { top: 100%; } }
 @keyframes neon-horizontal-reverse { to { right: 100%; } }
 @keyframes neon-vertical-reverse { to { bottom: 100%; } }
+
+.header .neon-servicios{ --neon-color: var(--button-servicios); }
+.header .neon-portafolio{ --neon-color: var(--button-portafolio); }
+.header .neon-curriculum{ --neon-color: var(--button-curriculum); }
+.header .glow-inicio{ --glow-color: var(--button-inicio); }
+.header .glow-contacto{ --glow-color: var(--button-contacto); }
 
 .header .glow-button{
   position: relative;
@@ -185,9 +201,9 @@ code {
   width: 30px;
   height: 10px;
   content: '';
-  background: #1edd45;
+  background: var(--glow-color);
   border-radius: 10px;
-  box-shadow: 0 0 5px #1edd45, 0 0 15px #1edd45, 0 0 30px #1edd45, 0 0 60px #1edd45;
+  box-shadow: 0 0 5px var(--glow-color), 0 0 15px var(--glow-color), 0 0 30px var(--glow-color), 0 0 60px var(--glow-color);
   transform: translateX(-50%);
   transition: .5s ease;
 }
@@ -301,8 +317,8 @@ button:hover{
   border: 1px solid #ff876f;
   border-radius: 8px;
   color: #fff;
-  background: #fa4529;
-  box-shadow: 0 0 8px rgba(250, 69, 41, .7), 0 0 18px rgba(250, 69, 41, .45);
+  background: var(--button-cta);
+  box-shadow: 0 0 8px var(--button-cta), 0 0 18px var(--button-cta);
   text-decoration: none;
   transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
   animation: glow-pulse 2s ease-in-out infinite alternate;
@@ -311,8 +327,8 @@ button:hover{
 .home .title .glow-button__link:hover,
 .home .title .glow-button__link:focus-visible{
   color: #fff;
-  background-color: #e9361b;
-  box-shadow: 0 0 12px rgba(250, 69, 41, .95), 0 0 30px rgba(250, 69, 41, .7);
+  background-color: var(--button-cta-hover);
+  box-shadow: 0 0 12px var(--button-cta), 0 0 30px var(--button-cta);
   transform: translateY(-2px);
   outline: none;
 }
@@ -324,16 +340,16 @@ button:hover{
 
 @keyframes glow-pulse {
   from {
-    box-shadow: 0 0 8px rgba(250, 69, 41, .65), 0 0 16px rgba(250, 69, 41, .35);
+    box-shadow: 0 0 8px var(--button-cta), 0 0 16px var(--button-cta);
   }
 
   to {
-    box-shadow: 0 0 12px rgba(250, 69, 41, .9), 0 0 28px rgba(250, 69, 41, .6);
+    box-shadow: 0 0 12px var(--button-cta), 0 0 28px var(--button-cta);
   }
 }
 
 @media (prefers-reduced-motion: reduce) {
-  .home .title .glow-button,
+  .home .title .glow-button__link,
   .header .btn-neon span {
     animation: none;
   }
