@@ -12,7 +12,7 @@ const Inicio = () => {
 
       <h2 className='title'>
         Si te interesa y tienes alguna idea en mente puedes 
-        <GlowButton to="/contacto">contactar conmigo aquí</GlowButton>
+        <GlowButton to="/contacto">contacta conmigo aquí</GlowButton>
       </h2>
 
       <section className='last-works'>
