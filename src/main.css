@@ -77,6 +77,57 @@ code {
   color:#fa4529;
 }
 
+.header .btn-neon{
+  position: relative;
+  display: inline-block;
+  overflow: hidden;
+  padding: 9px 12px;
+  border: 1px solid #fa4529;
+  border-radius: 4px;
+  color: #fa4529;
+  background: transparent;
+  letter-spacing: 1px;
+  text-decoration: none;
+  transition: color 250ms ease, background-color 250ms ease, box-shadow 250ms ease;
+}
+
+.header .btn-neon:hover,
+.header .btn-neon.active,
+.header .btn-neon:focus-visible{
+  color: #fff;
+  background-color: #fa4529;
+  box-shadow: 0 0 8px #fa4529, 0 0 20px rgba(250, 69, 41, .7);
+  outline: none;
+}
+
+.header .btn-neon span{
+  position: absolute;
+  display: block;
+  background: #fa4529;
+}
+
+.header .btn-neon .span1,
+.header .btn-neon .span3{
+  width: 100%;
+  height: 2px;
+}
+
+.header .btn-neon .span2,
+.header .btn-neon .span4{
+  width: 2px;
+  height: 100%;
+}
+
+.header .btn-neon .span1{ top: 0; left: -100%; animation: neon-horizontal 1.5s linear infinite; }
+.header .btn-neon .span2{ top: -100%; right: 0; animation: neon-vertical 1.5s linear infinite .375s; }
+.header .btn-neon .span3{ right: -100%; bottom: 0; animation: neon-horizontal-reverse 1.5s linear infinite .75s; }
+.header .btn-neon .span4{ bottom: -100%; left: 0; animation: neon-vertical-reverse 1.5s linear infinite 1.125s; }
+
+@keyframes neon-horizontal { to { left: 100%; } }
+@keyframes neon-vertical { to { top: 100%; } }
+@keyframes neon-horizontal-reverse { to { right: 100%; } }
+@keyframes neon-vertical-reverse { to { bottom: 100%; } }
+
 .content{
   min-height: 500px;
 }
@@ -156,6 +207,51 @@ button{
 input[type="submit"]:hover,
 button:hover{
   background-color: green;
+}
+
+.home .title .glow-button{
+  display: inline-block;
+  padding: 10px 16px;
+  margin-left: 7px;
+  border: 1px solid #ff876f;
+  border-radius: 8px;
+  color: #fff;
+  background: #fa4529;
+  box-shadow: 0 0 8px rgba(250, 69, 41, .7), 0 0 18px rgba(250, 69, 41, .45);
+  text-decoration: none;
+  transition: transform 200ms ease, box-shadow 200ms ease, background-color 200ms ease;
+  animation: glow-pulse 2s ease-in-out infinite alternate;
+}
+
+.home .title .glow-button:hover,
+.home .title .glow-button:focus-visible{
+  color: #fff;
+  background-color: #e9361b;
+  box-shadow: 0 0 12px rgba(250, 69, 41, .95), 0 0 30px rgba(250, 69, 41, .7);
+  transform: translateY(-2px);
+  outline: none;
+}
+
+.home .title .glow-button:focus-visible{
+  outline: 3px solid rgba(250, 69, 41, .35);
+  outline-offset: 3px;
+}
+
+@keyframes glow-pulse {
+  from {
+    box-shadow: 0 0 8px rgba(250, 69, 41, .65), 0 0 16px rgba(250, 69, 41, .35);
+  }
+
+  to {
+    box-shadow: 0 0 12px rgba(250, 69, 41, .9), 0 0 28px rgba(250, 69, 41, .6);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .home .title .glow-button,
+  .header .btn-neon span {
+    animation: none;
+  }
 }
 /* footer */
 .footer{

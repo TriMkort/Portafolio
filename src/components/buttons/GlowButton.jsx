@@ -1,20 +1,19 @@
-import '../style.css';
+import { Link } from 'react-router-dom';
 
 export function GlowButton({
+  to,
   href = '#',
   children = 'Inicio',
   className = '',
   ...props
 }) {
-  return (
-    <div className="contenido">
-      <div className={`btn ${className}`.trim()}>
-        <a href={href} {...props}>
-          {children}
-        </a>
-      </div>
-    </div>
-  );
+  const buttonClassName = `glow-button ${className}`.trim();
+
+  if (to) {
+    return <Link to={to} className={buttonClassName} {...props}>{children}</Link>;
+  }
+
+  return <a href={href} className={buttonClassName} {...props}>{children}</a>;
 }
 
 export default GlowButton;

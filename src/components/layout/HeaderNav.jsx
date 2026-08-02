@@ -1,4 +1,4 @@
-import { NavLink } from 'react-router-dom'
+import NeonButton from '../buttons/NeonButton'
 
 const HeaderNav = () => {
     return (
@@ -10,19 +10,19 @@ const HeaderNav = () => {
         <nav>
             <ul>
                 <li>
-                    <NavLink to="/inicio">Inicio</NavLink>
+                    <NeonButton to="/inicio">Inicio</NeonButton>
                 </li>
                 <li>
-                    <NavLink to="/servicios">Servicios</NavLink>
+                    <NeonButton to="/servicios">Servicios</NeonButton>
                 </li>
                 <li>
-                    <NavLink to="/portafolio">Portafolio</NavLink>
+                    <NeonButton to="/portafolio">Portafolio</NeonButton>
                 </li>
                 <li>
-                    <NavLink to="/curriculum">Curriculum</NavLink>
+                    <NeonButton to="/curriculum">Curriculum</NeonButton>
                 </li>
                 <li>
-                    <NavLink to="/contacto">Contacto</NavLink>
+                    <NeonButton to="/contacto">Contacto</NeonButton>
                 </li>
             </ul>
             </nav>
