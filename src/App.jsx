@@ -1,6 +1,6 @@
 
 import './App.css';
-import MisRutas from './router/MisRutas';
+import MisRutas from './router/MisRutas.jsx';
 
 function App() {
   return (

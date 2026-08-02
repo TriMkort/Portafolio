@@ -1,4 +1,3 @@
-import React from 'react'
 import ListadoTrabajos from './ListadoTrabajos';
 
 const Portafolio = () => {

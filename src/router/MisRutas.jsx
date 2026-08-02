@@ -1,4 +1,3 @@
-import React from 'react'
 import {Routes, Route, BrowserRouter, Navigate} from 'react-router-dom'
 import Inicio from '../components/Inicio'
 import Portafolio from '../components/Portafolio'
@@ -17,7 +16,7 @@ const MisRutas = () => {
         {/*  CONTENIDO CENTRLA */}
         <section className='content'>
             <Routes>
-                <Route index element={<Navigate to="/Inicio" />}/>
+                <Route index element={<Navigate to="/inicio" />}/>
                 <Route path='/inicio' className={({isActive}) => isActive ? "active" : ""} element={<Inicio />} />
                 <Route path='/portafolio' className={({isActive}) => isActive ? "active" : ""} element={<Portafolio />} />
                 <Route path='/servicios' className={({isActive}) => isActive ? "active" : ""} element={<Servicios />} />
