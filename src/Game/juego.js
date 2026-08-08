@@ -11,17 +11,17 @@ export function iniciarJuego(contexto) {
     contexto.width = width
     contexto.height = height
 
-    const point = new Audio("/Game/FlappyBird/soundstrack/point.mp3")
+    const point = new Audio("/Game/FlapyBird/soundstrack/point.mp3")
     const bird = new Image()
-    bird.src = "/Game/FlappyBird/img/bird.png"
+    bird.src = "/Game/FlapyBird/img/bird.png"
     const background = new Image()
-    background.src = "/Game/FlappyBird/img/background.png"
+    background.src = "/Game/FlapyBird/img/background.png"
     const tubeNorth = new Image()
-    tubeNorth.src = "/Game/FlappyBird/img/tubeNorth.png"
+    tubeNorth.src = "/Game/FlapyBird/img/tubeNorth.png"
     const tubeSouth = new Image()
-    tubeSouth.src = "/Game/FlappyBird/img/tubeSouth.png"
+    tubeSouth.src = "/Game/FlapyBird/img/tubeSouth.png"
     const suelo = new Image()
-    suelo.src = "/Game/FlappyBird/img/floor.png"
+    suelo.src = "/Game/FlapyBird/img/floor.png"
 
     function presionar() {
         personaje.y -= 35

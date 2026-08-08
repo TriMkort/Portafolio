@@ -5,7 +5,8 @@ const FlapyBird = () => {
     const canvasRef = useRef(null)
 
     useEffect(() => {
-        return iniciarJuego(canvasRef.current)
+        const limpiarJuego = iniciarJuego(canvasRef.current)
+        return limpiarJuego
     }, [])
 
     return (
