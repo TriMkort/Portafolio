@@ -8,6 +8,16 @@ export const trabajos = [
         descripcion: 'En esta pagina podras agregar titulos de peliculas como tambien modificar o buscarlas por su nombre',
         imagen: 'FilmWeb.png'
     },
+
+    {
+        id: 'flapy',
+        nombre: 'Game',
+        url: '/flapybird',
+        tecnologias: ['[JavaScript] ', '[CSS]'],
+        categoria: 'GAMES',
+        descripcion: 'Game basado en el juego de Flappy Bird, desarrollado con JavaScript y CSS, donde el jugador controla un pájaro que debe evitar obstáculos para obtener la mayor puntuación posible.',
+        imagen: 'flapy.png'
+    },
     
     {
         id: 'ProyectosHtml',
@@ -38,17 +48,9 @@ export const trabajos = [
         imagen: 'placeholder.svg'
     },
 
-        {
-        id: 'flapy',
-        nombre: 'Game',
-        url: '/flapybird',
-        tecnologias: ['[JavaScript] ', '[CSS]'],
-        categoria: 'GAMES',
-        descripcion: 'Game bass in the original game Flype Birds',
-        imagen: 'flapy.png'
-    },
+
     {
-        id: 'DataBase',
+        id: 'FingerLogin',
         nombre: 'DataBase',
         url: 'portafolio-delta-coral.vercel.app/inicio/error',
         tecnologias: ['[React] ', '[JavaScript] ', '[CSS]'],
