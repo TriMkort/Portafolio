@@ -41,7 +41,7 @@ export const trabajos = [
         {
         id: 'flapy',
         nombre: 'Game',
-        url: 'portafolio-delta-coral.vercel.app/inicio/error',
+        url: '/flapybird',
         tecnologias: ['[JavaScript] ', '[CSS]'],
         categoria: 'GAMES',
         descripcion: 'Game bass in the original game Flype Birds',

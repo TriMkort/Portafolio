@@ -9,9 +9,15 @@ const ListadoTrabajos = ({limite = 10}) => {
                 return(
                 <article key={trabajo.id} className='work-item'>
                     <div className='mask'>
-                    <a href={"https://" + trabajo.url}>
-                        <img src={"/images/" + (trabajo.imagen || 'placeholder.svg')} alt={trabajo.id}/>
-                    </a>
+                    {trabajo.url.startsWith('/') ? (
+                        <Link to={trabajo.url}>
+                            <img src={"/images/" + (trabajo.imagen || 'placeholder.svg')} alt={trabajo.id}/>
+                        </Link>
+                    ) : (
+                        <a href={"https://" + trabajo.url}>
+                            <img src={"/images/" + (trabajo.imagen || 'placeholder.svg')} alt={trabajo.id}/>
+                        </a>
+                    )}
                     </div>  
                     <span>{trabajo.categoria}</span>
                     <h2><Link to={"/proyecto/"+trabajo.id}>{trabajo.nombre}</Link></h2>
