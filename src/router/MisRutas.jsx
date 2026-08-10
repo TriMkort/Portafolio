@@ -9,6 +9,7 @@ import Footer from '../components/layout/Footer'
 import Proyecto from '../components/Proyecto'
 import ProyectosHtml from '../components/ProyectosHtml'
 import FlapyBird from '../components/FlapyBird'
+import FingerLogin from '../components/FingerLogin'
 
 
 const MisRutas = () => {
@@ -28,6 +29,7 @@ const MisRutas = () => {
                 <Route path='/proyecto/:id' className={({isActive}) => isActive ? "active" : ""} element={<Proyecto />} />
                 <Route path='/proyectoshtml' className={({isActive}) => isActive ? "active" : ""} element={<ProyectosHtml/>} />
                 <Route path='/flapybird' className={({isActive}) => isActive ? "active" : ""} element={<FlapyBird/>} />
+                <Route path='/fingerlogin' className={({isActive}) => isActive ? "active" : ""} element={<FingerLogin/>} />
                 <Route path='*' element={
                     <div className='page'>
                         <h1 className='heading'>Error 404</h1> 
