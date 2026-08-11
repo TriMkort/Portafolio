@@ -15,7 +15,7 @@ export const trabajos = [
         url: '/flapybird',
         tecnologias: ['[JavaScript] ', '[CSS]'],
         categoria: 'GAMES',
-        descripcion: 'Game basado en el juego de Flappy Bird, desarrollado con JavaScript y CSS, donde el jugador controla un pájaro que debe evitar obstáculos para obtener la mayor puntuación posible.',
+        descripcion: 'Game basado en el juego de Flappy Bird, desarrollado con JavaScript y CSS, donde el jugador controla un ave que debe evitar obstáculos para obtener la mayor puntuación posible.',
         imagen: 'flapy.png'
     },
 
@@ -25,7 +25,7 @@ export const trabajos = [
     url: '/fingerlogin',
     tecnologias: ['[React] ', '[JavaScript] ', '[CSS]'],
     categoria: 'Desarrollo web',
-    descripcion: 'Portafolio personal de Maikol Sabogal, un desarrollador web full stack.',
+    descripcion: 'El objetivo crear un sistema de autenticación que permita a los usuarios iniciar sesión en una aplicación web utilizando huellas dactilares como método de verificación. Esto proporciona una capa adicional de seguridad y comodidad para los usuarios, ya que no necesitan recordar contraseñas complejas. y una interfaz de usuario admin'
     imagen: 'fingerlogin.png'
     },
     
