@@ -12,7 +12,7 @@ export const trabajos = [
     {
         id: 'flapy',
         nombre: 'Game',
-        url: 'portafolio-delta-coral.vercel.app/flapybir',
+        url: 'portafolio-delta-coral.vercel.app/flapybird',
         tecnologias: ['[JavaScript] ', '[CSS]'],
         categoria: 'GAMES',
         descripcion: 'Game basado en el juego de Flappy Bird, desarrollado con JavaScript y CSS, donde el jugador controla un ave que debe evitar obstáculos para obtener la mayor puntuación posible.',

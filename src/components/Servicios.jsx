@@ -14,7 +14,7 @@ const Servicios = () => {
         </article>
         <article className='service'>
           <h2>Posicionamiento web</h2>
-          <p>Hago que tu web apareza en Google y la vea la gente</p>
+          <p>Hago que tu web apareza en Google para que sea visible al publico</p>
         </article>
       </section>
     </div>
