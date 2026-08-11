@@ -25,7 +25,7 @@ export const trabajos = [
     url: '/fingerlogin',
     tecnologias: ['[React] ', '[JavaScript] ', '[CSS]'],
     categoria: 'Desarrollo web',
-    descripcion: 'El objetivo crear un sistema de autenticación que permita a los usuarios iniciar sesión en una aplicación web utilizando huellas dactilares como método de verificación. Esto proporciona una capa adicional de seguridad y comodidad para los usuarios, ya que no necesitan recordar contraseñas complejas. y una interfaz de usuario admin'
+    descripcion: 'El objetivo crear un sistema de autenticación que permita a los usuarios iniciar sesión en una aplicación web utilizando huellas dactilares como método de verificación. Esto proporciona una capa adicional de seguridad y comodidad para los usuarios, ya que no necesitan recordar contraseñas complejas. y una interfaz de usuario admin',
     imagen: 'fingerlogin.png'
     },
     
