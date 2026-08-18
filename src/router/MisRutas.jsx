@@ -7,9 +7,10 @@ import Contacto from '../components/Contacto'
 import HeaderNav from '../components/layout/HeaderNav'
 import Footer from '../components/layout/Footer'
 import Proyecto from '../components/Proyecto'
-import ProyectosHtml from '../components/ProyectosHtml'
-import FlapyBird from '../components/FlapyBird'
-import FingerLogin from '../components/FingerLogin'
+import ProyectosHtml from '../components/pages/ProyectosHtml'
+import FlapyBird from '../components/pages/FlapyBird'
+import FingerLogin from '../components/pages/FingerLogin'
+import MenuRestaurant from '../components/pages/MenuRestaurant'
 
 
 const MisRutas = () => {
@@ -27,9 +28,11 @@ const MisRutas = () => {
                 <Route path='/curriculum' className={({isActive}) => isActive ? "active" : ""} element={<Curriculum />} />
                 <Route path='/contacto' className={({isActive}) => isActive ? "active" : ""} element={<Contacto />} />
                 <Route path='/proyecto/:id' className={({isActive}) => isActive ? "active" : ""} element={<Proyecto />} />
-                <Route path='/proyectoshtml' className={({isActive}) => isActive ? "active" : ""} element={<ProyectosHtml/>} />
                 <Route path='/flapybird' className={({isActive}) => isActive ? "active" : ""} element={<FlapyBird/>} />
                 <Route path='/fingerlogin' className={({isActive}) => isActive ? "active" : ""} element={<FingerLogin/>} />
+                <Route path='/pages/proyectoshtml' className={({isActive}) => isActive ? "active" : ""} element={<ProyectosHtml/>} />
+                <Route path='/pages/menurestaurant' className={({isActive}) => isActive ? "active" : ""} element={<MenuRestaurant/>} />
+
                 <Route path='*' element={
                     <div className='page'>
                         <h1 className='heading'>Error 404</h1> 
