@@ -12,7 +12,7 @@ export const trabajos = [
     {
         id: 'flapy',
         nombre: 'Game',
-        url: 'portafolio-delta-coral.vercel.app/flapybird',
+        url: '/flapybird',
         tecnologias: ['[JavaScript] ', '[CSS]'],
         categoria: 'GAMES',
         descripcion: 'Game basado en el juego de Flappy Bird, desarrollado con JavaScript y CSS, donde el jugador controla un ave que debe evitar obstáculos para obtener la mayor puntuación posible.',
@@ -22,7 +22,7 @@ export const trabajos = [
     {
     id: 'FingerLogin',
     nombre: 'Finger Login',
-    url: 'portafolio-delta-coral.vercel.app/fingerlogin',
+    url: '/fingerlogin',
     tecnologias: ['[React] ', '[JavaScript] ', '[CSS]'],
     categoria: 'Desarrollo web',
     descripcion: 'El objetivo crear un sistema de autenticación que permita a los usuarios iniciar sesión en una aplicación web utilizando huellas dactilares como método de verificación. Esto proporciona una capa adicional de seguridad y comodidad para los usuarios, ya que no necesitan recordar contraseñas complejas. y una interfaz de usuario admin',
@@ -32,7 +32,7 @@ export const trabajos = [
     {
         id: 'ProyectosHtml',
         nombre: ' Html, Css, JavaScript',
-        url: 'portafolio-delta-coral.vercel.app/proyectoshtml',
+        url: '/pages/proyectoshtml',
         tecnologias: ['[HTML] ', '[CSS] ', '[JavaScript] '],
         categoria: 'Diseño web',
         descripcion: 'Haremos cuatro ejercicio de html con el fin de poner en practica lo aprendido en el curso de Victor Robles.',
@@ -49,13 +49,13 @@ export const trabajos = [
         imagen: 'nikol.png'
     },
     {
-        id: 'Task Web',
-        nombre: 'Task Page',
-        url: 'portafolio-delta-coral.vercel.app/inicio/error',
+        id: 'Menu',
+        nombre: 'Menu Restaurant',
+        url: '/pages/menurestaurant',
         tecnologias: ['[React] ', '[JavaScript] ', '[CSS]'],
         categoria: 'Desarrollo web',
-        descripcion: 'Task page, is your oporunity for use it how asistant manage save your task ',
-        imagen: 'placeholder.svg'
+        descripcion: 'Creamos el menu intereactivo de un restaurante donde el usuario podra ver los productos y sus precios, ademas de poder agregar productos a su carrito de compras.',
+        imagen: 'menu.jpg'
     }
 
 ];

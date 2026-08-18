@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react'
-import { iniciarJuego } from '../Game/juego.js'
+import { iniciarJuego } from '../../Game/juego.js'
 
 const FlapyBird = () => {
     const canvasRef = useRef(null)

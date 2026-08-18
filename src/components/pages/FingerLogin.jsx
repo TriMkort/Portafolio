@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
-import Form from "./interaciones/Form";
+import Form from '../interaciones/Form';
+
 
 const FingerLogin = () => {
 
