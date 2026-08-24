@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 import './MenuRestaurant.css'
-import { entradas, platoPrincipales, pescadosMariscos } from '../../data/menuItems'
+import { entradas, ideales, pescadosMariscos, ARROCES, MENUINFANTIL, ENSALADAS, JUGOSYSODAS, POSTRES, SODAS, BEBIDAS, CERVEZAS, COCTELES, VINOS, BLANCOS, LICORES, VODKA, AUTOR} from '../../data/menuItems'
 
 const MenuRestaurant = () => {
     const [section, setSection] = useState('inicio')
@@ -8,12 +8,26 @@ const MenuRestaurant = () => {
     const itemsPerPage = 8
 
     // Combinar todos los items de los diferentes arrays
-    const menuItems = [...entradas, ...platoPrincipales, ...pescadosMariscos]
+    const menuItems = [...entradas, ...ideales, ...pescadosMariscos, ...ARROCES, ...ENSALADAS, ...JUGOSYSODAS, ...POSTRES, ...SODAS, ...BEBIDAS, ...CERVEZAS, ...COCTELES, ...VINOS, ...BLANCOS, ...LICORES, ...VODKA, AUTOR]
 
     const pageTitles = {
         1: 'Entradas',
         2: 'Ideales para compartir',
-        3: 'Pescados y Mariscos'
+        3: 'Pescados y Mariscos',
+        4: 'ARROCES',
+        5:'MENÚ INFANTIL',
+        6:'ENSALADAS',
+        7:'JUGOS Y SODAS',
+        8:'POSTRES',
+        9:'SODAS',
+        11:'BEBIDAS',
+        10:'CERVEZAS',
+        12:'COCTELES',
+        13:'VINOS',
+        14:'BLANCOS',
+        15:'LICORES',
+        16:'VODKA',
+        17:'AUTOR',
     }
 
     const totalPages = Math.ceil(menuItems.length / itemsPerPage)

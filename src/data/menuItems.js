@@ -50,7 +50,7 @@ export const entradas = [
         },
     ]
 
-export const platoPrincipales = [
+export const ideales = [
         {
                 id: 9,
                 nombre: 'CHICHARRONES',
@@ -146,5 +146,153 @@ export const pescadosMariscos = [
         {
             id: 24,
             descripcion: 'Elige uno de nuestros acompañamientos: Papas con mantequilla de ajo y perejil, puré cremoso de ñame y papa, papa francesa, patacón, porción de aguacate, ensalada fresca, vegetales salteados (Berenjena, zanahoria baby, mini tomates, brocoli, cebolla) arroz frijol cabeza negra. *No incluye acompañamientos.'
+        }
+    ]
+    export const ARROCES = [
+        {
+            id: 25,
+            nombre: 'NUESTRA PAELLA DE MARISCOS',
+            precio: '59.500',
+            descripcion: 'A nuestro estilo con mariscos, vegetales y chorizo.'
+        },
+        {
+            id: 26,
+            nombre: 'ARROZ MELOSO DE PULPO Y JAIBA',
+            precio: '45.000',
+            descripcion: 'Arroz meloso cocinado en fondo de mariscos, con pulpo y carne de jaiba.'
+        },
+        {
+            nombre: 'PASTAS'    
+        },
+        {
+            id: 27,
+            nombre: 'RIGATONI DE PULPO Y CAMARONES',
+            precio: '44.000',
+            descripcion: 'Pulpo y camarones salteados en salsa de tres tomates, vino blanco y albahaca fresca.'
+        },
+        {
+            id: 28,
+            nombre: 'RIGATONI CON STRIACCIATELA',
+            precio: '32.000',
+            descripcion: 'Salsa de tomates asados y queso de búfala del Rosal, Cundinamarca.'
+        },
+        {
+            id: 29,
+            nombre: 'PAPARDELLE CARBONARA',
+            precio: '34.000',
+            descripcion: 'Nuestra versión es con salsa a base de cachetes de cerdo ahumado, huevo, crema y queso.'
+        },
+        {
+            id: 30,
+            nombre: 'PAPARDELLE AL RAGÚ DE CORDERO',
+            precio: '44.000',
+            descripcion: 'Pasta ancha terminada en un estodado de cogote de cordero, vegetales y vino tinto, terminadas con nube de queso.'
+        },
+        {
+            id: 31,
+            nombre: 'RAVIOLIS DE MORCILLA',
+            precio: '36.000',
+            descripcion: 'Finalizados en salsa de sofrito criollo crema y stracciatella.'
         },
     ]
+
+    export const ENSALADAS = [
+        {
+            id: 32,
+            nombre: 'SANDÍA Y QUESO FETA',
+            precio: '29.000',
+            descripcion: 'Pepino europeo, sandía, queso de cabra, mini tomates, aceitunas, menta y cebolla encurtida.'  
+        },
+        {
+            id: 33,
+            nombre: 'PALMITOS DEL PUTUMAYO',
+            precio: '27.000',
+            descripcion: 'Cogollos, palmitos asados, aguacate, esparragos, marañones tostados y queso de búfala del Rosal, Cundinamarca.'   
+        },
+        {
+            id: 34,
+            nombre: 'COBS',
+            precio: '28.000',
+            descripcion: 'Nuestra versión es con tocino crujiente, huevo duro, agucate, tomate, bocconciru y mezcla de hojas frescas.'   
+        },
+        {
+            id: 35,
+            nombre: 'BURRATA Y MANGO',
+            precio: '43.000',
+            descripcion: 'Con burrata de búfala del Rosal, Cundinamarca, mango, jamón serrano, pístachos, rúgula baby y reducción balsámica.'   
+        },
+        {
+            nombre: 'ADICIONALES',
+            descripcion: 'Acompaña tu selección con uno de los siguientes productos.'
+        },
+        {
+            id: 36,
+            nombre: 'Pollo a la parrilla',
+            precio: '9.000'   
+        },
+        {
+            id: 37,
+            nombre: 'Tilapia asada',
+            precio: '12.500'   
+        },
+        {
+            id: 38,
+            nombre: 'Camarones salteados',
+            precio: '14.000'   
+        },
+        {
+            id: 39,
+            nombre: 'Salmón ahumado',
+            precio: '19.000'   
+        },
+        
+    ]
+
+    export const MENUINFANTIL = []
+    export const JUGOSYSODAS = []
+    export const POSTRES = []
+    export const SODAS = []
+    export const BEBIDAS = []
+    export const CERVEZAS = []
+    export const COCTELES = []
+    export const VINOS = [  
+        {
+            id: 39,
+            nombre: 'Salmón ahumado',
+            precio: '19.000'   
+        },
+        {
+            id: 100,
+            nombre: 'Salmón ahumado',
+            precio: '19.000'   
+        },
+        {
+            id: 100,
+            nombre: 'Salmón ahumado',
+            precio: '19.000'   
+        },
+        {
+            id: 100,
+            nombre: 'Salmón ahumado',
+            precio: '19.000'   
+        },
+        {
+            id: 100,
+            nombre: 'Salmón ahumado',
+            precio: '19.000'   
+        },
+        {
+            id: 100,
+            nombre: 'Salmón ahumado',
+            precio: '19.000'   
+        },
+        {
+            id: 100,
+            nombre: 'Salmón ahumado',
+            precio: '19.000'   
+        },
+        ]
+    export const BLANCOS = []
+    export const LICORES = []
+    export const VODKA = []
+    export const AUTOR = []
